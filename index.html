@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Siro HVAC Systems | Professional Air Conditioning</title>
+<meta name="description" content="Siro HVAC Systems provides professional air conditioning installation, repairs, maintenance and commercial HVAC solutions.">
+<style>
+:root{
+  --navy:#071a2f; --blue:#0878f9; --cyan:#25c7e8; --ice:#eef8ff;
+  --text:#152238; --muted:#637086; --white:#fff; --line:#dfe8f2;
+  --shadow:0 18px 50px rgba(7,26,47,.12); --radius:22px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--text);background:#fff;line-height:1.6}
+a{text-decoration:none;color:inherit}
+.container{width:min(1160px,92%);margin:auto}
+header{position:fixed;top:0;left:0;right:0;z-index:20;background:rgba(255,255,255,.92);backdrop-filter:blur(14px);border-bottom:1px solid rgba(223,232,242,.8)}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:30px}
+.logo{display:flex;align-items:center;height:58px;width:190px;overflow:hidden}.logo img{width:100%;height:100%;object-fit:cover;object-position:center}
+.logo span{color:var(--blue)}
+.navlinks{display:flex;gap:28px;font-size:.94rem;font-weight:700;color:#45536a}
+.navlinks a:hover{color:var(--blue)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border:0;border-radius:999px;padding:13px 21px;font-weight:800;cursor:pointer;transition:.2s}
+.btn-primary{background:var(--blue);color:#fff;box-shadow:0 10px 24px rgba(8,120,249,.25)}
+.btn-primary:hover{transform:translateY(-2px);background:#0567d7}
+.btn-light{background:#fff;color:var(--navy)}
+.hero{padding:150px 0 90px;background:
+radial-gradient(circle at 85% 20%,rgba(37,199,232,.28),transparent 28%),
+linear-gradient(135deg,#eef9ff 0%,#fff 58%,#edf5ff 100%);overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:55px}
+.eyebrow{display:inline-flex;gap:8px;align-items:center;color:var(--blue);font-size:.82rem;font-weight:900;letter-spacing:.12em;text-transform:uppercase;margin-bottom:16px}
+.eyebrow:before{content:"";width:28px;height:3px;border-radius:5px;background:var(--cyan)}
+h1{font-size:clamp(3rem,6vw,5.6rem);line-height:.98;letter-spacing:-.065em;color:var(--navy);max-width:700px}
+h1 span{color:var(--blue)}
+.hero p{font-size:1.12rem;color:var(--muted);max-width:600px;margin:24px 0 30px}
+.actions{display:flex;gap:12px;flex-wrap:wrap}
+.trust{display:flex;gap:25px;margin-top:38px;flex-wrap:wrap}
+.trust div{font-size:.9rem;color:#5f6d80}.trust strong{display:block;color:var(--navy);font-size:1rem}
+.hero-art{min-height:490px;border-radius:36px;background:linear-gradient(150deg,#06223d,#0a5e9e 65%,#21bcd8);position:relative;box-shadow:var(--shadow);overflow:hidden}
+.hero-art:before{content:"";position:absolute;width:360px;height:360px;border:55px solid rgba(255,255,255,.12);border-radius:50%;right:-120px;top:-90px}
+.hero-art:after{content:"";position:absolute;width:270px;height:270px;border:38px solid rgba(255,255,255,.08);border-radius:50%;left:-100px;bottom:-120px}
+.brand-hero{background:#071a2f;display:flex;align-items:center;justify-content:center}.brand-hero>img{width:100%;height:100%;object-fit:cover}.brand-hero:before{content:"";position:absolute;inset:0;background:linear-gradient(135deg,rgba(3,20,42,.25),rgba(0,115,220,.08));z-index:1}.brand-hero .badge{z-index:3}.unit{position:absolute;left:12%;right:12%;top:28%;height:145px;border-radius:20px;background:linear-gradient(#fff,#e7eef5);box-shadow:0 25px 45px rgba(0,0,0,.24);z-index:2}
+.unit:before{content:"SIRO";position:absolute;left:34px;top:28px;font-weight:900;font-size:1.8rem;color:#0b4775}
+.unit:after{content:"";position:absolute;left:34px;right:34px;bottom:26px;height:12px;border-radius:20px;background:repeating-linear-gradient(90deg,#9fb1c1 0 12px,transparent 12px 22px)}
+.air{position:absolute;left:18%;right:18%;top:54%;height:170px;z-index:1;background:repeating-linear-gradient(100deg,rgba(255,255,255,.4) 0 2px,transparent 2px 24px);filter:blur(1px);opacity:.45}
+.badge{position:absolute;z-index:4;bottom:28px;left:28px;background:rgba(255,255,255,.94);padding:14px 17px;border-radius:16px;box-shadow:0 10px 30px rgba(0,0,0,.18);font-weight:800}
+.badge small{display:block;color:var(--muted);font-weight:600}
+section{padding:95px 0}
+.section-head{max-width:680px;margin-bottom:45px}
+.section-head .eyebrow{margin-bottom:10px}
+h2{font-size:clamp(2rem,4vw,3.2rem);line-height:1.05;letter-spacing:-.045em;color:var(--navy)}
+.section-head p{color:var(--muted);margin-top:15px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{border:1px solid var(--line);border-radius:var(--radius);padding:28px;background:#fff;transition:.25s}
+.card:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+.icon{width:52px;height:52px;border-radius:15px;background:var(--ice);display:grid;place-items:center;color:var(--blue);font-size:1.45rem;margin-bottom:22px}
+.card h3{font-size:1.2rem;color:var(--navy);margin-bottom:8px}.card p{color:var(--muted);font-size:.95rem}
+.dark{background:var(--navy);color:#fff}.dark h2,.dark h3{color:#fff}.dark .section-head p,.dark .card p{color:#b8c6d8}
+.dark .card{background:#0d2946;border-color:#21425f}
+.pricing{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.price-card{padding:30px;border:1px solid var(--line);border-radius:24px}
+.price-card.featured{background:var(--navy);color:#fff;transform:translateY(-10px);box-shadow:var(--shadow)}
+.price-card h3{color:var(--navy);font-size:1.2rem}.featured h3{color:#fff}
+.price{font-size:2.35rem;font-weight:900;color:var(--blue);margin:10px 0}.featured .price{color:#4bd6ed}
+.price-card ul{list-style:none;margin:20px 0 28px}.price-card li{padding:8px 0;color:var(--muted);border-bottom:1px solid var(--line)}.featured li{color:#c3d2e2;border-color:#254561}
+.about{display:grid;grid-template-columns:.9fr 1.1fr;gap:60px;align-items:center}
+.about-box{background:linear-gradient(145deg,#eaf8ff,#dbeaff);border-radius:30px;min-height:390px;position:relative;overflow:hidden}.about-box img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.about-box .circle{position:absolute;border-radius:50%;background:rgba(8,120,249,.13);width:310px;height:310px;left:12%;top:12%}
+.about-box .mini{position:absolute;right:11%;bottom:13%;background:#fff;padding:20px;border-radius:20px;box-shadow:var(--shadow);font-weight:900}
+.checks{display:grid;grid-template-columns:1fr 1fr;gap:13px;margin-top:25px}.check{font-weight:700}.check span{color:var(--blue);margin-right:8px}
+.contact{background:linear-gradient(135deg,#f0faff,#fff)}
+.contact-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:35px}
+.contact-info{padding:15px 0}.contact-item{display:flex;gap:15px;margin:25px 0}.contact-item .icon{flex:0 0 48px;margin:0}.contact-item strong{display:block;color:var(--navy)}.contact-item span{color:var(--muted)}
+.form{background:#fff;border:1px solid var(--line);padding:30px;border-radius:26px;box-shadow:var(--shadow)}
+.fields{display:grid;grid-template-columns:1fr 1fr;gap:16px}.field{display:flex;flex-direction:column;gap:7px}.field.full{grid-column:1/-1}
+label{font-size:.84rem;font-weight:800;color:#445268}input,textarea,select{font:inherit;border:1px solid var(--line);border-radius:12px;padding:13px 14px;outline:none;background:#fbfdff}input:focus,textarea:focus,select:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(8,120,249,.1)}textarea{min-height:120px;resize:vertical}
+footer{background:#041426;color:#aebed0;padding:32px 0}.footer{display:flex;justify-content:space-between;gap:20px;align-items:center}.footer strong{color:#fff}
+.mobile{display:none}
+@media(max-width:850px){
+.navlinks,.nav>.btn{display:none}.mobile{display:block}
+.hero-grid,.about,.contact-grid{grid-template-columns:1fr}.hero-art{min-height:390px}.cards,.pricing{grid-template-columns:1fr}.price-card.featured{transform:none}.fields{grid-template-columns:1fr}.field.full{grid-column:auto}.hero{padding-top:125px}.footer{flex-direction:column;text-align:center}
+}
+</style>
+</head>
+<body>
+<header><div class="container nav">
+<a class="logo" href="#home"><img src="siro-hvac-logo.png" alt="Siro HVAC Systems — Comfort, Our Priority"></a>
+<nav class="navlinks"><a href="#home">Home</a><a href="#about">About Us</a><a href="#services">Services</a><a href="#pricing">Pricing</a><a href="#contact">Contact</a></nav>
+<a class="btn btn-primary" href="#contact">Request a Quote</a><button class="mobile btn btn-primary" onclick="document.querySelector('.navlinks').classList.toggle('show')">☰</button>
+</div></header>
+
+<main>
+<section class="hero" id="home"><div class="container hero-grid">
+<div>
+<div class="eyebrow">Comfort engineered better</div>
+<h1>Cool air.<br><span>Better living.</span></h1>
+<p>Siro HVAC Systems delivers reliable air conditioning solutions for homes, offices and commercial spaces — from installation to maintenance and repairs.</p>
+<div class="actions"><a class="btn btn-primary" href="#contact">Get a Free Quote →</a><a class="btn" style="background:#e8f4ff;color:#075aab" href="#services">Explore Services</a></div>
+<div class="trust"><div><strong>Professional</strong> Quality workmanship</div><div><strong>Reliable</strong> Fast, responsive service</div><div><strong>Efficient</strong> Solutions that last</div></div>
+</div>
+<div class="hero-art brand-hero"><img src="siro-hvac-logo.png" alt="Siro HVAC Systems logo — Comfort, Our Priority"><div class="badge">Johannesburg HVAC Experts<small>Residential • Commercial • Industrial</small></div></div>
+</div></section>
+
+<section id="services"><div class="container">
+<div class="section-head"><div class="eyebrow">What we do</div><h2>Complete aircon solutions, from start to finish.</h2><p>Whether you need a new system or your current unit needs attention, our services are designed around dependable performance and comfort.</p></div>
+<div class="cards">
+<div class="card"><div class="icon">❄</div><h3>Aircon Installation</h3><p>Professional installation for residential and commercial spaces, with the right system selected for your needs.</p></div>
+<div class="card"><div class="icon">🔧</div><h3>Repairs & Diagnostics</h3><p>We identify faults, restore performance and help get your air conditioning back to comfortable operation.</p></div>
+<div class="card"><div class="icon">⚙</div><h3>Maintenance</h3><p>Routine servicing to keep systems efficient, clean and reliable while helping prevent unexpected breakdowns.</p></div>
+<div class="card"><div class="icon">🏢</div><h3>Commercial HVAC</h3><p>Practical climate-control solutions for offices, retail spaces and other commercial environments.</p></div>
+<div class="card"><div class="icon">↻</div><h3>Replacement & Upgrades</h3><p>Upgrade ageing or inefficient systems with modern, energy-conscious air conditioning options.</p></div>
+<div class="card"><div class="icon">💨</div><h3>System Assessment</h3><p>Get advice on capacity, placement and system requirements before committing to an installation.</p></div>
+</div></div></section>
+
+<section class="dark" id="about"><div class="container about">
+<div class="about-box"><img src="siro-hvac-selected-logo.png" alt="Siro HVAC Systems selected blue logo design"></div>
+<div><div class="eyebrow">About Siro HVAC Systems</div><h2>Comfort is our priority.</h2><p style="margin-top:18px;color:#b8c6d8">We believe a good HVAC system should be dependable, efficient and professionally installed. Siro HVAC Systems is focused on delivering practical air conditioning solutions with clear communication and quality workmanship.</p>
+<div class="checks"><div class="check"><span>✓</span>Professional service</div><div class="check"><span>✓</span>Quality workmanship</div><div class="check"><span>✓</span>Customer-focused</div><div class="check"><span>✓</span>Reliable solutions</div></div></div>
+</div></section>
+
+<section id="pricing"><div class="container">
+<div class="section-head"><div class="eyebrow">Pricing</div><h2>Simple starting points. Tailored quotes.</h2><p>Every property and system is different, so final pricing is confirmed after assessing your requirements.</p></div>
+<div class="pricing">
+<div class="price-card"><h3>Service Call</h3><div class="price">From R650</div><p>For inspections and basic diagnostics.</p><ul><li>System assessment</li><li>Fault diagnosis</li><li>Service recommendations</li></ul><a class="btn btn-primary" href="#contact">Enquire</a></div>
+<div class="price-card featured"><h3>Maintenance</h3><div class="price">From R850</div><p>For routine aircon servicing.</p><ul><li>Cleaning & inspection</li><li>Performance check</li><li>Maintenance report</li></ul><a class="btn btn-light" href="#contact">Book Service</a></div>
+<div class="price-card"><h3>Installation</h3><div class="price">Quote</div><p>Tailored to your space and system.</p><ul><li>Site assessment</li><li>System recommendation</li><li>Professional installation</li></ul><a class="btn btn-primary" href="#contact">Get Quote</a></div>
+</div></div></section>
+
+<section class="contact" id="contact"><div class="container contact-grid">
+<div><div class="eyebrow">Let's get started</div><h2>Ready to make your space more comfortable?</h2><p style="margin-top:16px;color:var(--muted)">Tell us what you need and the Siro HVAC Systems team can help you find the right solution.</p>
+<div class="contact-info"><div class="contact-item"><div class="icon">☎</div><div><strong>Phone / WhatsApp</strong><span>011 985 2568</span></div></div><div class="contact-item"><div class="icon">✉</div><div><strong>Email</strong><span>sirohvacsystems@gmail.com</span></div></div><div class="contact-item"><div class="icon">⌖</div><div><strong>Service Area</strong><span>Johannesburg, Gauteng</span></div></div></div></div>
+<form class="form" action="https://formspree.io/f/xppqprea" method="POST">
+<input type="hidden" name="_subject" value="New Siro HVAC Systems Quote Request">
+<div class="fields">
+<div class="field"><label for="name">Name</label><input id="name" name="name" required placeholder="Your name"></div>
+<div class="field"><label for="phone">Phone</label><input id="phone" name="phone" required placeholder="+27 ..."></div>
+<div class="field"><label for="email">Email</label><input id="email" name="email" type="email" required placeholder="you@example.com"></div>
+<div class="field"><label for="service">Service</label><select id="service" name="service"><option>Aircon installation</option><option>Repair</option><option>Maintenance</option><option>Commercial HVAC</option><option>Replacement / upgrade</option></select></div>
+<div class="field full"><label for="message">How can we help?</label><textarea id="message" name="message" required placeholder="Tell us about your aircon needs..."></textarea></div>
+<div class="field full"><button class="btn btn-primary" type="submit">Request My Quote →</button></div>
+</div>
+</form></div></section>
+</main>
+<footer><div class="container footer"><div><strong>SIRO HVAC SYSTEMS</strong><br><small>Professional air conditioning solutions.</small></div><small>© 2026 Siro HVAC Systems. All rights reserved.</small></div></footer>
+</body>
+</html>
